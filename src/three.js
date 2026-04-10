@@ -50,7 +50,26 @@ function MyThree() {
 
   }, []);
 
-  return <div ref={refContainer}></div>;
+  return (
+  <div ref={refContainer} style={{ position: "relative" }}>
+    
+    <div style={{
+      position: "absolute",
+      top: "200px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      color: "white",
+      fontSize: "18px",
+      fontWeight: "bold",
+      textAlign: "center",
+      zIndex: 1
+    }}>
+      Muhammad Abdullah Mufeez <br />
+      Seat No: B23110006080
+    </div>
+
+  </div>
+);
 }
 
 export default MyThree;
